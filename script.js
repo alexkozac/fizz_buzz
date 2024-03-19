@@ -23,4 +23,11 @@ function startFizzBuzz() {
     const fizz = parseInt(document.getElementById("inputFizz").value);
     const buzz = parseInt(document.getElementById("inputBuzz").value);
     fizzBuzz(n, fizz, buzz);
+    document.getElementById("inputContainer").style.display = "none";
+    document.getElementById("resultContainer").style.display = "block";
+}
+
+function goBack() {
+    document.getElementById("inputContainer").style.display = "block";
+    document.getElementById("resultContainer").style.display = "none";
 }
