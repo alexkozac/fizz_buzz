@@ -1,85 +1,42 @@
 body {
-    font-family: sans-serif;
-    background-color: black;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
 }
 
-h1{
-color: white;
-text-align: center
-}
-
 .container {
     display: flex;
-    justify-content: center;
-    max-width: 800px;
+    justify-content: space-between;
+    max-width: 1200px;
     margin: 50px auto;
-    background-color: black;
 }
 
-.input-container {
-    border: 6px solid white;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    background-color: black;
-}
-
-.button{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    background-color: black;
-    border: 2px solid white;
-
-}
-
-.button a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.4rem;
-    padding: 5px;
-}
-
-.btn{
-    display: flex;
-    justify-content: center;
-}
-
-.bnt button{
-    font-size: 2rem;
-}
-
+.input-container,
 .result-container {
     background-color: #fff;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: calc(50% - 20px);
-    display: flex;
-    flex-wrap: wrap;
-    background-color: black;
-    border: 6px solid white;
-    gap: 5px;
-}
-
-label {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
 }
 
-label p {
-    font-weight: bold;
-    color: white;
+.input-container h1,
+.result-container h1 {
+    margin-bottom: 20px;
+}
+
+.input-container label,
+.input-container input,
+.input-container button {
+    display: block;
+    margin-bottom: 10px;
 }
 
 .square {
-    width: calc(20% - 10px);
     height: 60px;
-    border: 2px solid white;
+    background-color: #007bff;
     border-radius: 8px;
-    display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;

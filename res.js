@@ -19,7 +19,6 @@ function fizzBuzz(n, fizz, buzz) {
 }
 
 function getParams() {
-    const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const n = parseInt(urlParams.get('n'));
     const fizz = parseInt(urlParams.get('fizz'));
